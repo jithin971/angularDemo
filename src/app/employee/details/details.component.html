@@ -1,0 +1,17 @@
+<p>
+  details works!
+</p>
+
+{{empData |json}}
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Body</th>
+  </tr>
+  <tr *ngFor="let abcd of dataFromHttp">
+    <td>{{abcd.title}}</td>
+    <td>{{abcd.body}}</td>
+  </tr>
+</table>
+<button (click)="communicate()">communicate</button>

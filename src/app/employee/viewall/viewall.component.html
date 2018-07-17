@@ -1,0 +1,13 @@
+<table border="2">
+  <tr>
+    <th>Name</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let emp of   employees">
+      <td>{{emp.name}}</td>
+      <td><button (click)="selectData(emp)">details</button></td>
+    </tr>
+  </table>
+  <div *ngIf="parentData">
+ Data is recieved
+</div>
